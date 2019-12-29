@@ -1,4 +1,7 @@
 <template>
+<div>
+        <strong><h1>Not Working</h1></strong>
+        <h2>로그인</h2>
   <form class="login-form" @submit.prevent="login">
       <!--  
           form에 이벤트 리스너 달아서,
@@ -11,6 +14,8 @@
       <input class="LoginInput" v-model="credentials.password" placeholder="비밀번호" type="password" name="" id="password"><br>
       <button class="btn-primary" type="submit">가입</button>
   </form>
+  </div>
+
 </template>
 
 <script>
