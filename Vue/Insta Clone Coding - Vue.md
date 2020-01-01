@@ -46,6 +46,13 @@ const routers = [
 
 
 
+## Vue Login
+
+```bash
+$ npm i vue-session
+$ npm i jwt-decode
+```
+
 
 
 

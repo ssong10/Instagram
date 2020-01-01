@@ -33,6 +33,7 @@ export default {
                 .then(response => {
                     console.log(response.data.token)
                     const token = response.data.token
+                    console.log(token)
                     this.$session.start()
                     this.$session.set('jwt', token)
                     // vuex actions 호출 -> dispatch
