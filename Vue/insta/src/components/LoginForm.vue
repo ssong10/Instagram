@@ -1,6 +1,6 @@
 <template>
 <div>
-        <strong><h1>Not Working</h1></strong>
+        <strong><h1 class="status"></h1></strong>
         <h2>로그인</h2>
   <form class="login-form" @submit.prevent="login">
       <!--  
@@ -8,11 +8,9 @@
           1) 사용자 입력값 출력
           2) /api-token-auth/로 요청 보내서 토큰값 출력
       -->
-      <input class="LoginInput" v-model="credentials.phone" placeholder="휴대폰 번호 또는 이메일 주소" type="text" id="email"><br>
-      <input class="LoginInput" v-model="credentials.username" placeholder="성명" type="text" id="user_id"><br>
-      <input class="LoginInput" v-model="credentials.nickname" placeholder="사용자 이름" type="text" id="nickname"><br>
+      <input class="LoginInput" v-model="credentials.username" placeholder="전화번호, 사용자 이름 또는 이메일" type="text" id="nickname"><br>
       <input class="LoginInput" v-model="credentials.password" placeholder="비밀번호" type="password" name="" id="password"><br>
-      <button class="btn-primary" type="submit">가입</button>
+      <button class="btn-primary" type="submit">로그인</button>
   </form>
   </div>
 
