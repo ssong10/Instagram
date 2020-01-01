@@ -20,9 +20,9 @@ export default {
 
 <style>
 .login {
+  margin: auto;
   margin-top:30px;
-  margin-left:345px;
-  margin-right:342px;
+  width:833px;
 }
 
 .image {

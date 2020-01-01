@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\sjy12\Desktop\isnta-clone\venv"
+$env:VIRTUAL_ENV="C:\Users\sjy12\Desktop\Instagram\Django\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
