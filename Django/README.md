@@ -5,6 +5,7 @@
   ```bash
 $pip install pillow
   $pip install pilkit
+  ```
 # 순서대로 설치
   $pip install django-imagekit
 ```
@@ -21,3 +22,13 @@ $pip install pillow
 
   
   
+```
+
+
+
+## 로그인 기능 구현
+
+```bash
+
+```
+
