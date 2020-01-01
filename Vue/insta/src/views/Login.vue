@@ -19,15 +19,23 @@ export default {
 </script>
 
 <style>
+.login {
+  margin-top:30px;
+  margin-left:250px;
+  margin-right:250px;
+}
+
 .image {
-  display:inline-block;
+  float:left;
+  width:50%;
+  margin-right:20px;
 }
 .loginform {
-  display:inline-block;
     padding:1rem;
     justify-content: center;
     align-items: center;
+    float:right;
     border: solid 0.3px #838383af;
-    width:50%;
+    width:40%;
 }
 </style>
