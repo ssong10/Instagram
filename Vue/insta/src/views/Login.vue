@@ -21,14 +21,13 @@ export default {
 <style>
 .login {
   margin-top:30px;
-  margin-left:250px;
-  margin-right:250px;
+  margin-left:345px;
+  margin-right:342px;
 }
 
 .image {
   float:left;
-  width:50%;
-  margin-right:20px;
+  width:450px;
 }
 .loginform {
     padding:1rem;
@@ -36,6 +35,6 @@ export default {
     align-items: center;
     float:right;
     border: solid 0.3px #838383af;
-    width:40%;
+    width:350px;
 }
 </style>
