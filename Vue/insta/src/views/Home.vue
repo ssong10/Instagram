@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <h1>Home</h1> 
+    <h3>Following 게시글 표기</h3> 
   </div>
 </template>
 
