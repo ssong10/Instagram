@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
       <span v-if="this.$session.get('id')">
-        | <router-link to="/about">About</router-link>
+        <router-link to="/">Home</router-link>
+      | <router-link to="/about">About</router-link>
       </span>
       <span v-else>
-        | <router-link to="/login">Login</router-link>
+        <router-link to="/login">Login</router-link>
       </span>
       <div v-if="this.$session.get('id')">
         {{ this.$session.get("id") }} 님 로그인 되었습니다

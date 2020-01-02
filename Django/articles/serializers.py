@@ -9,7 +9,7 @@ class HashtagSerializers(serializers.ModelSerializer):
 class ArticleSerializers(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ['id', 'image_thumbnail', 'content', 'created_at', 'like_user', 'user', 'hashtag']
+        fields = ['id', 'image', 'content', 'created_at', 'like_user', 'user', 'hashtag']
 
 class CommentSerializers(serializers.ModelSerializer):
     class Meta:

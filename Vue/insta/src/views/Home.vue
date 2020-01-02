@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div v-if="this.$session.get('id')" class="home">
     <h1>Home</h1> 
     <h3>Following 게시글 표기</h3> 
   </div>
