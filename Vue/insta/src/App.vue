@@ -26,8 +26,9 @@ export default {
     }
   },
   mounted(){
-    console.log(this.$session.get("jwt"))
-    this.$store.dispatch('session')
+    if (!this.$store.state.auth.token){
+      this.$store.dispatch('login',this.$session.get("jwt"))
+    }
   }
 }
 </script>

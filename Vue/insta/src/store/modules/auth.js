@@ -20,14 +20,6 @@ const actions = {
     },
     logout(context) {
         context.commit('setToken',null)
-    },
-    session(context) {
-        if (this.$session.get("jwt")){
-            console.log(state.token)
-            context.commit('setToken',this.$session.get("jwt"))
-        
-            console.log(state.token)
-        }
     }
 }
 import jwtDecode from 'jwt-decode'
