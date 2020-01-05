@@ -24,6 +24,10 @@ export default {
     logout() {
       this.$store.dispatch('logout')
     }
+  },
+  mounted(){
+    console.log(this.$session.get("jwt"))
+    this.$store.dispatch('session')
   }
 }
 </script>

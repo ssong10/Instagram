@@ -8,7 +8,6 @@ const mutations = {
     // 첫번째 인자는 state
     // 이후 인자는 payload(즉, 매개변수)
     setToken(state, token) {
-        console.log('set', token)
         state.token = token
     }
 }
@@ -17,12 +16,18 @@ const actions = {
     // 이후 인자는 payload(매개변수)
     login(context, token) {
         // mutation 호출 -> commit
-        console.log('login')
         context.commit('setToken',token)
     },
     logout(context) {
-        console.log('logout')
         context.commit('setToken',null)
+    },
+    session(context) {
+        if (this.$session.get("jwt")){
+            console.log(state.token)
+            context.commit('setToken',this.$session.get("jwt"))
+        
+            console.log(state.token)
+        }
     }
 }
 import jwtDecode from 'jwt-decode'
