@@ -1,6 +1,7 @@
 <template>
   <div class="login">
       <LoginImage class="image"/>
+      <SignUp class="loginform"/>
       <LoginForm class="loginform" />
   </div>
 </template>
@@ -8,12 +9,14 @@
 <script>
 import LoginForm from '@/components/LoginForm.vue'
 import LoginImage from '@/components/LoginImage.vue'
+import SignUp from '@/components/SignUp.vue'
 
 export default {
     name: 'Login',
     components: {
         LoginForm,
-        LoginImage
+        LoginImage,
+        SignUp,
     },
 }
 </script>
