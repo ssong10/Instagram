@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div id="nav">
-    {{ $store.state.auth.token }} <br>
       <span v-if="this.$store.state.auth.token">
         <router-link to="/">Home</router-link>
       | <router-link to="/about">About</router-link>
@@ -10,8 +9,8 @@
         <router-link to="/login">Login</router-link>
       </span>
       <div v-if="this.$store.state.auth.token">
-        user_id : {{ $store.getters.user }} <br>
-        {{ this.$session.get("id") }} 님 로그인 되었습니다
+        user_id : {{ $store.getters.user_id }} <br>
+        {{ $store.getters.username }} 님 로그인 되었습니다
         <button @click="logout" id="logout">logout</button>
       </div>
     </div>

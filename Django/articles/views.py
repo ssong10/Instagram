@@ -13,7 +13,8 @@ def create(request):
         serializers = ArticleSerializers(articles,many=True)
         return Response(serializers.data)
     if request.method == 'POST':
-        serializers = ArticleSerializers(data=request.POST)
+        print(request.data)
+        serializers = ArticleSerializers(data=request.data)
         if serializers.is_valid(raise_exception=True):
             serializers.save()
             return Response(serializers.data)
@@ -21,6 +22,6 @@ def create(request):
 @api_view(['GET','POST'])
 def user_create(request,user_id):
     if request.method == 'GET':
-        articles = Article.objects.filter(user_id=user_id)
+        articles = Article.objects.filter(user_id=user_id).order_by('-id')
         serializers = ArticleSerializers(articles,many=True)
         return Response(serializers.data)

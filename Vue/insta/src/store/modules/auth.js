@@ -28,13 +28,19 @@ const getters = {
     options(state) {
         return {
             headers : {
-                Authorization : `JWT ${state.token}`
+                Authorization : `JWT ${state.token}`,
+                'content-type': 'multipart/form-data'
             }
         }
     },
-    user(state) {
+    user_id(state) {
         return jwtDecode(state.token).user_id
+    },
+    username(state) {
+        return jwtDecode(state.token).username
     }
+
+    
 }
 export default {
     state,
